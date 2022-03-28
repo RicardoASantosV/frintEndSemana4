@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/estiloPok.css">
+</head>
+<body>
+    <div class="container">
+        <div class="panTop">
+          <div class="pokImg">
+            <div class="Imagen" id="apiImg"></div>
+            <div class="nomPok">
+            <p id="namePok"></p>
+            </div>
+          </div>
+        </div>
+        <div class="sep"></div>
+        <div class="patInf">
+          <div class="IngPok">
+            <div class="tipoPok"></div>
+            <div class="estPok"></div>
+            <div class="movPok" >
+              <p id="movTitle">Abilities</p>
+              <ol id="moviPok">
+              </ol>
+            </div>
+          </div>
+        </div>
+         <div class="eventPok">
+          <div class="namePok">
+            <input type="text" placeholder="pikachu" id="pokeName" name="pokeName">
+          </div>
+          <div class="bottonPok">
+                <button onclick="fetchPokemon()">Buscar</button>
+          </div>
+        </div>
+      </div>
+</body>
+<footer>
+    <script src="./js/pokedex.js"></script>
+</footer>
+</html>

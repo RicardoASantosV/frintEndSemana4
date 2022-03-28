@@ -1,0 +1,153 @@
+.container {  display: grid;
+  grid-template-columns: 1.1fr 0.9fr 1.9fr 0.1fr 1.4fr 1fr;
+  grid-template-rows: 1fr 1fr 0.2fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". panTop panTop . . ."
+    ". panTop panTop . eventPok ."
+    ". sep sep . busPok ."
+    ". patInf patInf . . ."
+    ". patInf patInf . . .";
+  width: 884px;
+  height: 745px;
+}
+
+.panTop {  display: grid;
+  grid-template-columns: 0.6fr 1.4fr 1.4fr 0.6fr;
+  grid-template-rows: 0.5fr 1.5fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . ."
+    ". pokImg pokImg ."
+    ". pokImg pokImg ."
+    ". pokImg pokImg .";
+  grid-area: panTop;
+  background-color:#C02126;
+  border-radius:15px 15px 10px 10px;
+}
+
+.pokImg {  display: grid;
+  grid-template-columns: 0.3fr 2.5fr 0.2fr;
+  grid-template-rows: 0.6fr 1.9fr 0.3fr 0.8fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". Imagen ."
+    ". nomPok ."
+    ". . .";
+  grid-area: pokImg;
+  background-color:#57565E;
+  border:2px solid black;
+}
+
+.Imagen { 
+  grid-area: Imagen;
+  background-color:#ffffff;
+
+}
+
+.nomPok {
+  grid-area: nomPok; 
+  background-color:#ffffff;
+}
+
+.sep { 
+  grid-area: sep;
+  background-color:#3D4142;
+  border-radius:10px 10px 10px 10px;
+  border:1px solid black;
+}
+
+.patInf {  display: grid;
+  grid-template-columns: 0.9fr 1.1fr 1.2fr 0.8fr;
+  grid-template-rows: 1fr 1fr 1.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". IngPok IngPok ."
+    ". IngPok IngPok ."
+    ". IngPok IngPok ."
+    ". . . .";
+  grid-area: patInf;
+  background-color:#C02126;
+  border-radius:10px 10px 15px 15px;
+}
+
+.IngPok {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 0.4fr 2fr 1.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    "tipoPok tipoPok tipoPok"
+    "estPok estPok estPok"
+    "movPok movPok movPok";
+  grid-area: IngPok;
+  background-color:#57565E;
+  border:2px solid black;
+}
+
+.tipoPok { 
+  grid-area: tipoPok;
+  background-color:#ffffff;
+
+}
+
+.estPok {
+  grid-area: estPok;
+  background-color:#ffffff;
+
+}
+
+.movPok { 
+  grid-area: movPok; 
+  background-color:#ffffff;
+
+}
+
+.eventPok {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "namePok"
+    "."
+    "bottonPok"
+    "."; 
+  grid-area: eventPok; 
+}
+.namePok { 
+  grid-area: namePok;
+}
+.bottonPok {
+  grid-area: bottonPok; 
+}
+
+#apiImg{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#movTitle{
+  visibility: hidden;
+  font-weight:bolder;
+  font-size:20px;
+}
+
+#namePok{
+  text-align:center;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+
